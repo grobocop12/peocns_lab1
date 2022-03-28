@@ -92,9 +92,10 @@ void Server::summarize(ostream &str)
     double lambda = 1.0 / meanArrivalInterval;
     double meanMessageLifetime = messagesLifetimeCalc.calculateMean();
     double ro = lambda / mu;
-    double EL = ro / (1.0 - ro);
-    double ES = EL / lambda;
+    double EN = ro / (1.0 - ro);
+    double ES = EN / lambda;
     double ET = ro / (mu - lambda); 
+    str.width(10);
 
     str << "histogram:" << std::endl;
     queueHist.printPv(str);
@@ -105,8 +106,8 @@ void Server::summarize(ostream &str)
     str << "ρ: " << ro << std::endl;
     str << std::endl;
     str << "średnia liczba zadań w systemie: " << std::endl;
-    str << "z wzoru ρ/(1-ρ): \t" << EL << std::endl;
-    str << "z histogramu: \t" << meanMessagesInSystem << std::endl;
+    str << "z wzoru ρ/(1-ρ): \t" << EN << std::endl;
+    str << "z histogramu: \t\t" << meanMessagesInSystem << std::endl;
     str << std::endl;
     str << "średni czas pobytu w systemie:" << std::endl;
     str << "zmierzony:\t" << meanMessageLifetime << std::endl;
@@ -121,10 +122,11 @@ void Server::summarize(ostream &str)
 
 void Server::printProbabilities(double ro, ostream &str)
 {
-    double N[] = {0, 1, 2, 5, 50, 500, 5000000};
+    //double N[] = {0, 1, 2, 5, 50, 500, 5000000};
+    double N[] = {0, 1, 2, (double)queueSize};
     int length = sizeof(N)/sizeof(N[0]);
     for (int i = 0; i < length; i++) {
-        double probability = (1.0 - ro) * pow(ro, N[i]);
+        long double probability = (1.0 - ro) * pow(ro, N[i]);
         str << "P(" << N[i] << "): " << probability << std::endl;
     }
 }
