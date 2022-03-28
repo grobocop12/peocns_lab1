@@ -7,81 +7,71 @@ Setting up Cmdenv...
 Loading NED files from .:  1
 
 Preparing for running configuration General, run #0...
-Assigned runID=General-0-20220328-22:35:53-33289
+Assigned runID=General-0-20220328-22:43:47-34533
 Setting up network "gg1"...
 Initializing...
 
 Running simulation...
-** Event #0   t=0   Elapsed: 1.4e-05s (0m 00s)  0% completed  (0% total)
+** Event #0   t=0   Elapsed: 4.4e-05s (0m 00s)  0% completed  (0% total)
      Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
      Messages:  created: 2   present: 2   in FES: 1
-** Event #6472448   t=1620299.632   Elapsed: 2.00002s (0m 02s)  19% completed  (19% total)
-     Speed:     ev/sec=3.2362e+06   simsec/sec=810144   ev/simsec=3.9946
-     Messages:  created: 1618114   present: 2   in FES: 0
-** Event #12980224   t=3246988.14   Elapsed: 4.00004s (0m 04s)  39% completed  (39% total)
-     Speed:     ev/sec=3.25387e+06   simsec/sec=813339   ev/simsec=4.00063
-     Messages:  created: 3245058   present: 2   in FES: 0
-** Event #19483136   t=4870846.88   Elapsed: 6.00007s (0m 06s)  59% completed  (59% total)
-     Speed:     ev/sec=3.2514e+06   simsec/sec=811915   ev/simsec=4.0046
-     Messages:  created: 4870786   present: 2   in FES: 0
-** Event #25902080   t=6474895.978   Elapsed: 8.00017s (0m 08s)  79% completed  (79% total)
-     Speed:     ev/sec=3.20931e+06   simsec/sec=801984   ev/simsec=4.00171
-     Messages:  created: 6475522   present: 2   in FES: 0
-** Event #32174080   t=8042627.79   Elapsed: 10.0002s (0m 10s)  99% completed  (99% total)
-     Speed:     ev/sec=3.13589e+06   simsec/sec=783839   ev/simsec=4.00068
-     Messages:  created: 8043522   present: 2   in FES: 0
-** Event #32175104   t=8042900.889   Elapsed: 10.0007s (0m 10s)  100% completed  (100% total)
+** Event #6189824   t=1547456.633   Elapsed: 2.00002s (0m 02s)  19% completed  (19% total)
+     Speed:     ev/sec=3.09491e+06   simsec/sec=773728   ev/simsec=4
+     Messages:  created: 1547458   present: 2   in FES: 0
+** Event #12328448   t=3082113   Elapsed: 4.0001s (0m 04s)  39% completed  (39% total)
+     Speed:     ev/sec=3.06919e+06   simsec/sec=767299   ev/simsec=4
+     Messages:  created: 3082115   present: 4   in FES: 1
+** Event #18324736   t=4581185   Elapsed: 6.0001s (0m 06s)  59% completed  (59% total)
+     Speed:     ev/sec=2.99814e+06   simsec/sec=749534   ev/simsec=4
+     Messages:  created: 4581187   present: 4   in FES: 1
+** Event #24304128   t=6076033   Elapsed: 8.00018s (0m 08s)  79% completed  (79% total)
+     Speed:     ev/sec=2.98957e+06   simsec/sec=747394   ev/simsec=4
+     Messages:  created: 6076035   present: 4   in FES: 1
+** Event #30318592   t=7579648.44   Elapsed: 10.0002s (0m 10s)  99% completed  (99% total)
+     Speed:     ev/sec=3.00721e+06   simsec/sec=751801   ev/simsec=4
+     Messages:  created: 7579650   present: 2   in FES: 0
+** Event #30343168   t=7585792.137   Elapsed: 10.0084s (0m 10s)  100% completed  (100% total)
      Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
-     Messages:  created: 8043778   present: 2   in FES: 1
+     Messages:  created: 7585794   present: 2   in FES: 1
 
-<!> CPU time limit reached -- at t=8042900.889s, event #32175104
+<!> CPU time limit reached -- at t=7585792.137s, event #30343168
 
 Calling finish() at end of Run #0...
 histogram:
-0 0.49979
-1 0.249974
-2 0.124896
-3 0.0626026
-4 0.0313348
-5 0.0156805
-6 0.00785143
-7 0.00392679
-8 0.00196687
-9 0.000999855
-10 0.000502068
-11 0.000246109
-12 0.000121822
-13 6.02607e-05
-14 2.59333e-05
-15 1.16189e-05
-16 4.99621e-06
-17 1.73059e-06
-18 1.25701e-06
-19 6.66426e-07
-20 3.72005e-07
-21 1.37761e-07
+0 0.499773
+1 0.398379
+2 0.0809828
+3 0.0165299
+4 0.00342405
+5 0.000715096
+6 0.00015164
+7 3.40804e-05
+8 7.69755e-06
+9 1.45588e-06
+10 3.78866e-07
+11 1.86533e-07
 
-λ: 1.00011
-μ: 1.99938
-ρ: 0.50021
+λ: 1
+μ: 1.99909
+ρ: 0.500227
 
 średnia liczba zadań w systemie: 
-z wzoru ρ/(1-ρ): 	1.00084
-z histogramu: 		1.00131
+z wzoru ρ/(1-ρ): 	1.00091
+z histogramu: 		0.628435
 
 średni czas pobytu w systemie:
-zmierzony:	1.0012
-obliczony:	1.00073
+zmierzony:	0.628435
+obliczony:	1.00091
 
 średni czas oczekiwania w kolejce:
-zmierzony:	0.501046
-obliczony:	0.500575
+zmierzony:	0.128209
+obliczony:	0.500681
 
 prawdopodobieństwo utraty pakietu: 0
 
-P(0): 0.49979
+P(0): 0.499773
 P(1): 0.25
-P(2): 0.125052
-P(500): 1.88283e-151
+P(2): 0.125057
+P(500): 1.91526e-151
 
 End.

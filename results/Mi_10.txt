@@ -7,69 +7,62 @@ Setting up Cmdenv...
 Loading NED files from .:  1
 
 Preparing for running configuration General, run #0...
-Assigned runID=General-0-20220328-22:36:38-33491
+Assigned runID=General-0-20220328-22:43:28-34438
 Setting up network "gg1"...
 Initializing...
 
 Running simulation...
-** Event #0   t=0   Elapsed: 9e-06s (0m 00s)  0% completed  (0% total)
+** Event #0   t=0   Elapsed: 1.4e-05s (0m 00s)  0% completed  (0% total)
      Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
      Messages:  created: 2   present: 2   in FES: 1
-** Event #6290432   t=1574763.002   Elapsed: 2.00003s (0m 02s)  19% completed  (19% total)
-     Speed:     ev/sec=3.14518e+06   simsec/sec=787372   ev/simsec=3.99453
-     Messages:  created: 1572610   present: 2   in FES: 0
-** Event #12434688   t=3112106.475   Elapsed: 4.00009s (0m 04s)  39% completed  (39% total)
-     Speed:     ev/sec=3.07204e+06   simsec/sec=768649   ev/simsec=3.99667
-     Messages:  created: 3108674   present: 2   in FES: 0
-** Event #18599424   t=4651162.128   Elapsed: 6.0001s (0m 06s)  59% completed  (59% total)
-     Speed:     ev/sec=3.08237e+06   simsec/sec=769527   ev/simsec=4.00553
-     Messages:  created: 4649859   present: 4   in FES: 1
-** Event #24741376   t=6186872.141   Elapsed: 8.00013s (0m 08s)  79% completed  (79% total)
-     Speed:     ev/sec=3.07093e+06   simsec/sec=767843   ev/simsec=3.99942
-     Messages:  created: 6185346   present: 2   in FES: 0
-** Event #30718976   t=7680860.393   Elapsed: 10.0002s (0m 10s)  99% completed  (99% total)
-     Speed:     ev/sec=2.98868e+06   simsec/sec=746964   ev/simsec=4.0011
-     Messages:  created: 7679746   present: 2   in FES: 0
-** Event #30753792   t=7689630.612   Elapsed: 10.0119s (0m 10s)  100% completed  (100% total)
-     Speed:     ev/sec=2.9897e+06   simsec/sec=753132   ev/simsec=3.96968
-     Messages:  created: 7688450   present: 2   in FES: 1
+** Event #6170368   t=1542592.199   Elapsed: 2.00006s (0m 02s)  19% completed  (19% total)
+     Speed:     ev/sec=3.08511e+06   simsec/sec=771277   ev/simsec=4
+     Messages:  created: 1542594   present: 2   in FES: 0
+** Event #12501248   t=3125312.154   Elapsed: 4.00011s (0m 04s)  39% completed  (39% total)
+     Speed:     ev/sec=3.16535e+06   simsec/sec=791338   ev/simsec=4
+     Messages:  created: 3125314   present: 2   in FES: 0
+** Event #18742272   t=4685568.044   Elapsed: 6.00012s (0m 06s)  59% completed  (59% total)
+     Speed:     ev/sec=3.1205e+06   simsec/sec=780126   ev/simsec=4
+     Messages:  created: 4685570   present: 2   in FES: 0
+** Event #24991232   t=6247808.082   Elapsed: 8.00016s (0m 08s)  79% completed  (79% total)
+     Speed:     ev/sec=3.12443e+06   simsec/sec=781106   ev/simsec=4
+     Messages:  created: 6247810   present: 2   in FES: 0
+** Event #31154176   t=7788544.007   Elapsed: 10.0002s (0m 10s)  99% completed  (99% total)
+     Speed:     ev/sec=3.08145e+06   simsec/sec=770362   ev/simsec=4
+     Messages:  created: 7788546   present: 2   in FES: 0
+** Event #31155200   t=7788800.359   Elapsed: 10.0006s (0m 10s)  100% completed  (100% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 7788802   present: 2   in FES: 1
 
-<!> CPU time limit reached -- at t=7689630.612s, event #30753792
+<!> CPU time limit reached -- at t=7788800.359s, event #31155200
 
 Calling finish() at end of Run #0...
 histogram:
-0 0.900015
-1 0.0899841
-2 0.00899764
-3 0.000901588
-4 9.13738e-05
-5 9.30318e-06
-6 1.14414e-06
-7 3.06647e-07
-8 6.47625e-08
-9 7.15249e-09
+0 0.899962
+1 0.100034
+2 4.61766e-06
 
-λ: 0.999846
-μ: 9.99991
-ρ: 0.0999855
+λ: 1
+μ: 9.99616
+ρ: 0.100038
 
 średnia liczba zadań w systemie: 
-z wzoru ρ/(1-ρ): 	0.111093
-z histogramu: 		0.111106
+z wzoru ρ/(1-ρ): 	0.111159
+z histogramu: 		0.100043
 
 średni czas pobytu w systemie:
-zmierzony:	0.111123
-obliczony:	0.11111
+zmierzony:	0.100043
+obliczony:	0.111159
 
 średni czas oczekiwania w kolejce:
-zmierzony:	0.0111219
-obliczony:	0.0111094
+zmierzony:	4.61766e-06
+obliczony:	0.0111201
 
 prawdopodobieństwo utraty pakietu: 0
 
-P(0): 0.900015
-P(1): 0.0899884
-P(2): 0.00899753
+P(0): 0.899962
+P(1): 0.0900307
+P(2): 0.00900653
 P(500): 0
 
 End.
