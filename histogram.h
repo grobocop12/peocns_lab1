@@ -159,4 +159,8 @@ public:
 
         return sum / packets;
     }
+
+    long getNumberOfPackets() {
+        return packets;
+    }
 };
