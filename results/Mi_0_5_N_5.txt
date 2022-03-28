@@ -1,0 +1,68 @@
+OMNeT++ Discrete Event Simulation  (C) 1992-2021 Andras Varga, OpenSim Ltd.
+Version: 5.7, build: 211004-1d27e5f35e, edition: Academic Public License -- NOT FOR COMMERCIAL USE
+See the license for distribution terms and warranty disclaimer
+
+Setting up Cmdenv...
+
+Loading NED files from .:  1
+
+Preparing for running configuration General, run #0...
+Assigned runID=General-0-20220328-21:46:58-26235
+Setting up network "gg1"...
+Initializing...
+
+Running simulation...
+** Event #0   t=0   Elapsed: 9e-06s (0m 00s)  0% completed  (0% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 2   present: 2   in FES: 1
+** Event #6303232   t=2114507.526   Elapsed: 2.00005s (0m 02s)  20% completed  (20% total)
+     Speed:     ev/sec=3.15155e+06   simsec/sec=1.05723e+06   ev/simsec=2.98095
+     Messages:  created: 2112712   present: 7   in FES: 1
+** Event #12444672   t=4172818.003   Elapsed: 4.00006s (0m 04s)  40% completed  (40% total)
+     Speed:     ev/sec=3.07071e+06   simsec/sec=1.02915e+06   ev/simsec=2.98373
+     Messages:  created: 4170512   present: 6   in FES: 1
+** Event #18490368   t=6196893.004   Elapsed: 6.00009s (0m 06s)  60% completed  (60% total)
+     Speed:     ev/sec=3.0228e+06   simsec/sec=1.01202e+06   ev/simsec=2.98689
+     Messages:  created: 6194931   present: 2   in FES: 0
+** Event #24408576   t=8181095.094   Elapsed: 8.0001s (0m 08s)  80% completed  (80% total)
+     Speed:     ev/sec=2.95909e+06   simsec/sec=992098   ev/simsec=2.98266
+     Messages:  created: 8176273   present: 5   in FES: 1
+** Event #30657024   t=10274486.918   Elapsed: 10.0001s (0m 10s)  100% completed  (100% total)
+     Speed:     ev/sec=3.12418e+06   simsec/sec=1.04668e+06   ev/simsec=2.98484
+     Messages:  created: 10271736   present: 6   in FES: 1
+** Event #30657536   t=10274642.933   Elapsed: 10.0004s (0m 10s)  100% completed  (100% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 10271904   present: 6   in FES: 2
+
+<!> CPU time limit reached -- at t=10274642.933s, event #30657536
+
+Calling finish() at end of Run #0...
+histogram:
+0 0.015968
+1 0.0318305
+2 0.063645
+3 0.127016
+4 0.761541
+
+λ: 0.999733
+μ: 0.500156
+ρ: 1.99884
+
+średnia liczba zadań w systemie: 
+z wzoru ρ/(1-ρ): 	-2.00116
+z histogramu: 		3.58633
+
+średni czas pobytu w systemie:
+zmierzony:	8.3186
+obliczony:	-2.00169
+
+średni czas oczekiwania w kolejce:
+zmierzony:	6.31923
+obliczony:	-4.00107
+
+P(0): -0.998843
+P(1): -1.99653
+P(2): -3.99075
+P(5): -31.8706
+
+End.

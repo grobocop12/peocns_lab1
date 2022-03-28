@@ -1,0 +1,113 @@
+OMNeT++ Discrete Event Simulation  (C) 1992-2021 Andras Varga, OpenSim Ltd.
+Version: 5.7, build: 211004-1d27e5f35e, edition: Academic Public License -- NOT FOR COMMERCIAL USE
+See the license for distribution terms and warranty disclaimer
+
+Setting up Cmdenv...
+
+Loading NED files from .:  1
+
+Preparing for running configuration General, run #0...
+Assigned runID=General-0-20220328-21:53:30-27512
+Setting up network "gg1"...
+Initializing...
+
+Running simulation...
+** Event #0   t=0   Elapsed: 1.1e-05s (0m 00s)  0% completed  (0% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 2   present: 2   in FES: 1
+** Event #6238208   t=1563599.347   Elapsed: 2.00006s (0m 02s)  19% completed  (19% total)
+     Speed:     ev/sec=3.11903e+06   simsec/sec=781781   ev/simsec=3.98965
+     Messages:  created: 1560114   present: 12   in FES: 1
+** Event #12567040   t=3146672.714   Elapsed: 4.00009s (0m 04s)  39% completed  (39% total)
+     Speed:     ev/sec=3.16437e+06   simsec/sec=791524   ev/simsec=3.99781
+     Messages:  created: 3142909   present: 4   in FES: 1
+** Event #18802432   t=4705466.723   Elapsed: 6.00014s (0m 06s)  59% completed  (59% total)
+     Speed:     ev/sec=3.11763e+06   simsec/sec=779380   ev/simsec=4.00014
+     Messages:  created: 4702333   present: 7   in FES: 1
+** Event #25061632   t=6270091.233   Elapsed: 8.00021s (0m 08s)  79% completed  (79% total)
+     Speed:     ev/sec=3.12948e+06   simsec/sec=782281   ev/simsec=4.00045
+     Messages:  created: 6267664   present: 6   in FES: 1
+** Event #31164160   t=7795322.704   Elapsed: 10.0002s (0m 10s)  99% completed  (99% total)
+     Speed:     ev/sec=3.05125e+06   simsec/sec=762613   ev/simsec=4.00105
+     Messages:  created: 7793946   present: 7   in FES: 1
+** Event #31166464   t=7795924.561   Elapsed: 10.001s (0m 10s)  100% completed  (100% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 7794533   present: 29   in FES: 2
+
+<!> CPU time limit reached -- at t=7795924.561s, event #31166464
+
+Calling finish() at end of Run #0...
+histogram:
+0 0.0917979
+1 0.0833355
+2 0.075644
+3 0.0689151
+4 0.0623657
+5 0.0566361
+6 0.0515664
+7 0.0470053
+8 0.0426151
+9 0.038862
+10 0.0352055
+11 0.0319941
+12 0.028994
+13 0.0263558
+14 0.0239364
+15 0.0218193
+16 0.019701
+17 0.0179957
+18 0.0163976
+19 0.0148989
+20 0.013595
+21 0.0124557
+22 0.0113359
+23 0.010318
+24 0.00939727
+25 0.00851884
+26 0.00779691
+27 0.00712618
+28 0.00651724
+29 0.00591082
+30 0.00539528
+31 0.00491263
+32 0.0044853
+33 0.00412087
+34 0.00369937
+35 0.00335624
+36 0.00308794
+37 0.00277485
+38 0.00252152
+39 0.00226539
+40 0.00207609
+41 0.00189175
+42 0.00169064
+43 0.00155101
+44 0.00138292
+45 0.00123119
+46 0.00111797
+47 0.000995893
+48 0.000895562
+49 0.00153413
+
+λ: 0.999821
+μ: 1.10006
+ρ: 0.908882
+
+średnia liczba zadań w systemie: 
+z wzoru ρ/(1-ρ): 	9.97478
+z histogramu: 		9.63302
+
+średni czas pobytu w systemie:
+zmierzony:	9.64267
+obliczony:	9.97656
+
+średni czas oczekiwania w kolejce:
+zmierzony:	8.73362
+obliczony:	9.06752
+
+P(0): 0.091118
+P(1): 0.0828155
+P(2): 0.0752695
+P(50): 0.000767324
+
+End.
