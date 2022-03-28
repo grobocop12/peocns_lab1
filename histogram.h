@@ -1,4 +1,4 @@
-// Z tych  klas u�ywamy QueueHist i metod: put() ,get(), printPv()
+// Z tych  klas używamy QueueHist i metod: put() ,get(), printPv()
 #pragma once
 #include <vector>
 #include <iostream>
@@ -37,7 +37,7 @@ public:
     }
 
     double createPv()
-    // wywolujemy pod koniec symulacji - buduje histogram i zwraca srednią d�ugo�� kolejki
+    // wywolujemy pod koniec symulacji - buduje histogram i zwraca srednią długość kolejki
     {
         double mean = 0;
         for (int i = 0; i < size; i++)

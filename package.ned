@@ -12,7 +12,7 @@ simple Server
 {
     parameters:
         volatile double service_time;
-        int buffer_size;           
+        int queue_size;           
     gates:
         input in;
         output out;
