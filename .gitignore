@@ -2,3 +2,7 @@
 .settings
 out
 laboratorium1
+.qtenvrc
+.settings
+Makefile
+peocns_lab1
