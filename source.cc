@@ -4,7 +4,7 @@ using namespace omnetpp;
 
 class Source : public cSimpleModule
 {
-
+    int id;
 	cMessage *send_event; //message-reminder: send next job
 
   protected:
@@ -17,9 +17,11 @@ Define_Module(Source);
 
 void Source::initialize()
 {  
+    id = (int) par("id");
 	for(int i=0;i<(int)par("initial_queue");i++) //this loop builds the initial queue
 	{
 		cMessage *job = new cMessage("Job");
+	    job->setKind(id);
 //		job->setTimestamp(simTime());
 		send(job, "out" );
 	}
@@ -30,6 +32,7 @@ void Source::initialize()
 void Source::handleMessage(cMessage *msgin) //send next job
 {
     cMessage *job = new cMessage("Job");
+    job->setKind(id);
 //    job->setTimestamp(simTime());
 	send(job, "out" );
 	scheduleAt(simTime()+par("interarrival_time"), send_event); //schedule next send event

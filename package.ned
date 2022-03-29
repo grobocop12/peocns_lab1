@@ -2,7 +2,8 @@ simple Source
 {
     parameters:
         volatile double interarrival_time; 
-        volatile int initial_queue;        
+        volatile int initial_queue;   
+        volatile int id;            
 									 					  
     gates:
         output out;
@@ -12,7 +13,9 @@ simple Server
 {
     parameters:
         volatile double service_time;
-        int queue_size;           
+        int queue_size;
+        volatile int id;    
+        volatile int initial_message_count;       
     gates:
         input in;
         output out;
@@ -29,21 +32,17 @@ module GG1
 	parameters:
 	
     submodules:
-        source: Source {
+        server1: Server {
             parameters:
-                @display("i=block/source");
+                @display("i=block/queue1");
         }
-        server: Server {
+        server2: Server {
             parameters:
-                @display("i=block/queue");
+                @display("i=block/queue2");
         }
-        sink: Sink {
-            parameters:
-                @display("i=block/sink");
-        }
-    connections:
-        source.out --> {  } --> server.in;
-        server.out --> {  } --> sink.in;
+    connections allowunconnected:
+        server1.out --> {  } --> server2.in;
+        server2.out --> {  } --> server1.in;
 }
 
 network gg1 extends GG1
