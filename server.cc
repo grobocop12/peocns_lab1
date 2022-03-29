@@ -8,6 +8,7 @@ class Server : public cSimpleModule
 {
 private:
     int queueSize;
+    int id;
     cQueue queue;             // the queue; first job in the queue is being serviced
     cMessage *departure;      // message-reminder of the end of service (job departure)
     simtime_t departure_time; // time of the next departure
@@ -30,6 +31,7 @@ Define_Module(Server);
 void Server::initialize()
 {
     queueSize = par("queue_size").intValue();
+    id = (int) par("id");
     lastArrival = 0;
     departure = new cMessage("Departure");
     queueHist = QueueHist(queueSize);
@@ -40,6 +42,8 @@ void Server::initialize()
 
 void Server::handleMessage(cMessage *msgin)
 {
+    msgin->setKind(id);
+
     if (msgin == departure) // job departure
     {
         cMessage *msg = (cMessage *)queue.pop(); // remove job from the head of the queue
@@ -76,7 +80,7 @@ void Server::handleMessage(cMessage *msgin)
     }
 }
 // jak queue jest pusta, to system pusty
-// jak jest jeden w queue to system obsługuje, a kolejka jest pusta
+// jak jest jeden w queue to system obs��uguje, a kolejka jest pusta
 void Server::finish()
 {
     summarize(std::cout);
@@ -97,7 +101,7 @@ void Server::summarize(ostream &str)
     double ET = ro / (mu - lambda); 
     str.width(10);
 
-    str << "histogram:" << std::endl;
+    str << "histogram server nr. " << id << ":" << std::endl;
     queueHist.printPv(str);
     str << std::endl;
 
