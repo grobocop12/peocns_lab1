@@ -1,0 +1,118 @@
+OMNeT++ Discrete Event Simulation  (C) 1992-2021 Andras Varga, OpenSim Ltd.
+Version: 5.7, build: 211004-1d27e5f35e, edition: Academic Public License -- NOT FOR COMMERCIAL USE
+See the license for distribution terms and warranty disclaimer
+
+Setting up Cmdenv...
+
+Loading NED files from .:  1
+
+Preparing for running configuration General, run #0...
+Assigned runID=General-0-20220330-22:13:43-37737
+Setting up network "gg1"...
+Initializing...
+
+Running simulation...
+** Event #0   t=0   Elapsed: 1e-05s (0m 00s)  0% completed  (0% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 4   present: 4   in FES: 2
+** Event #6409216   t=534703.337   Elapsed: 2.00007s (0m 02s)  19% completed  (19% total)
+     Speed:     ev/sec=3.20451e+06   simsec/sec=267344   ev/simsec=11.9865
+     Messages:  created: 1068207   present: 5   in FES: 2
+** Event #12796416   t=1067151.013   Elapsed: 4.00014s (0m 04s)  39% completed  (39% total)
+     Speed:     ev/sec=3.19348e+06   simsec/sec=266214   ev/simsec=11.9959
+     Messages:  created: 2132742   present: 8   in FES: 3
+** Event #19138816   t=1594801.541   Elapsed: 6.00019s (0m 06s)  59% completed  (59% total)
+     Speed:     ev/sec=3.17112e+06   simsec/sec=263819   ev/simsec=12.0201
+     Messages:  created: 3189807   present: 5   in FES: 2
+** Event #25404672   t=2117156.031   Elapsed: 8.00027s (0m 08s)  79% completed  (79% total)
+     Speed:     ev/sec=3.1328e+06   simsec/sec=261167   ev/simsec=11.9954
+     Messages:  created: 4234116   present: 4   in FES: 1
+** Event #31115520   t=2593231.249   Elapsed: 10.0003s (0m 10s)  99% completed  (99% total)
+     Speed:     ev/sec=2.8554e+06   simsec/sec=238036   ev/simsec=11.9957
+     Messages:  created: 5185925   present: 6   in FES: 3
+** Event #31213568   t=2601336.751   Elapsed: 10.0351s (0m 10s)  100% completed  (100% total)
+     Speed:     ev/sec=2.81866e+06   simsec/sec=233017   ev/simsec=12.0964
+     Messages:  created: 5202266   present: 5   in FES: 3
+
+<!> CPU time limit reached -- at t=2601336.751s, event #31213568
+
+Calling finish() at end of Run #0...
+histogram server nr. 1:
+0 0.599921
+1 0.240046
+2 0.0959952
+3 0.0384147
+4 0.0153578
+5 0.00614392
+6 0.00247303
+7 0.000984755
+8 0.000389191
+9 0.000158131
+10 6.41674e-05
+11 3.08349e-05
+12 1.26669e-05
+13 3.83764e-06
+14 2.78664e-06
+15 8.4495e-07
+16 3.0023e-07
+17 1.27242e-07
+
+λ: 1.99984
+μ: 4.99862
+ρ: 0.400079
+
+średnia liczba zadań w systemie: 
+z wzoru ρ/(1-ρ): 	0.666887
+z histogramu: 		0.666941
+
+średni czas pobytu w systemie:
+zmierzony:	0.333497
+obliczony:	0.33347
+
+średni czas oczekiwania w kolejce:
+zmierzony:	0.133442
+obliczony:	0.133414
+
+P(0): 0.599921
+P(1): 0.240016
+P(2): 0.0960253
+P(500): 7.09654e-200
+histogram server nr. 2:
+0 0.50004
+1 0.324327
+2 0.122581
+3 0.0377781
+4 0.0109106
+5 0.00313359
+6 0.000893741
+7 0.000247929
+8 6.46183e-05
+9 1.79923e-05
+10 4.98667e-06
+11 1.05984e-06
+12 3.09841e-07
+13 1.14172e-07
+14 5.49717e-08
+
+λ: 1.99984
+μ: 4
+ρ: 0.49996
+
+średnia liczba zadań w systemie: 
+z wzoru ρ/(1-ρ): 	0.999842
+z histogramu: 		0.749977
+
+średni czas pobytu w systemie:
+zmierzony:	0.375018
+obliczony:	0.49996
+
+średni czas oczekiwania w kolejce:
+zmierzony:	0.125018
+obliczony:	0.24996
+
+P(0): 0.50004
+P(1): 0.25
+P(2): 0.12499
+P(500): 1.46833e-151
+
+End.
