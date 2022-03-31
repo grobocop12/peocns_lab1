@@ -63,8 +63,11 @@ void Server::handleMessage(cMessage *msgin)
             simtime_t interval = par("service_time");
             departureIntervalCalc.put(interval);
             scheduleAt(simTime() + interval, departure);
+            queue.insert(msgin); //0.989978
+            queueHist.put();
+
         }
-        if (queue.getLength() < queueSize)
+        else if (queue.getLength() < queueSize)
         {
             queue.insert(msgin); // put job at the end of the queue
             queueHist.put();
@@ -76,7 +79,7 @@ void Server::handleMessage(cMessage *msgin)
     }
 }
 // jak queue jest pusta, to system pusty
-// jak jest jeden w queue to system obsługuje, a kolejka jest pusta
+// jak jest jeden w queue to system obs��uguje, a kolejka jest pusta
 void Server::finish()
 {
     summarize(std::cout);
@@ -105,23 +108,23 @@ void Server::summarize(ostream &str)
     queueHist.printPv(str);
     str << std::endl;
 
-    str << "λ: " << lambda << std::endl;
-    str << "μ: " << mu << std::endl;
-    str << "ρ: " << ro << std::endl;
+    str << "��: " << lambda << std::endl;
+    str << "��: " << mu << std::endl;
+    str << "��: " << ro << std::endl;
     str << std::endl;
-    str << "średnia liczba zadań w systemie: " << std::endl;
-    str << "z wzoru ρ/(1-ρ): \t" << EN << std::endl;
+    str << "��rednia liczba zada�� w systemie: " << std::endl;
+    str << "z wzoru ��/(1-��): \t" << EN << std::endl;
     str << "z histogramu: \t\t" << meanMessagesInSystem << std::endl;
     str << std::endl;
-    str << "średni czas pobytu w systemie:" << std::endl;
+    str << "��redni czas pobytu w systemie:" << std::endl;
     str << "zmierzony:\t" << meanMessageLifetime << std::endl;
     str << "obliczony:\t" << ES << std::endl;
     str << std::endl;
-    str << "średni czas oczekiwania w kolejce:" << std::endl;
+    str << "��redni czas oczekiwania w kolejce:" << std::endl;
     str << "zmierzony:\t" << meanMessageLifetime - meanServiceTime << std::endl;
     str << "obliczony:\t" << ET << std::endl;
     str << std::endl;
-    str << "prawdopodobieństwo utraty pakietu: " << probabilityOfLosingPacket << std::endl;
+    str << "prawdopodobie��stwo utraty pakietu: " << probabilityOfLosingPacket << std::endl;
     str << std::endl;
     printProbabilities(ro, str);
 }
